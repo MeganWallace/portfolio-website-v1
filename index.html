@@ -1,87 +1,198 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <title>Megan Wallace Design</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-<!--  ********    ********    WEBPAGE BODY    ********    ********  -->
-<!--  ********    ********        Header    ********    ********  -->
-    <body>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- ---------------- Google Fonts ---------------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+    <!-- Styles sheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/cfa1c0bdb4.js" crossorigin="anonymous"></script>
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<!-- ========================== WEBSITE BODY ========================== -->
+
+<body>
     <header>
-        <div class="full-width">
-            <div class="half-width">
-                <h1><a href="index.html">Megan Wallace Design</a></h1>
+        <!-- ========== Header section ========== -->
+        <div class="content-wrapper">
+            <div id="mwd">
+                <a href="index.html">megan wallace design</a>
             </div>
-            <div class="half-width">
-                <nav>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="work/index.html">Work</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <h2><span>Hi,</span> I'm a developer that loves clean &amp; elegant code.</h2>
+            <nav>
+                <ul>
+                    <li><a href="#work">work</a></li>
+                    <!-- to open link in new tab insert following immediately after href: target="_blank" -->
+                    <li><a href="#about">about</a></li>
+                    <!-- to open link in new tab insert following immediately after href: target="_blank" -->
+                    <li><a href="#contact">contact</a></li>
+                    <!-- to open link in new tab insert following immediately after href: target="_blank" -->
+                </ul>
+            </nav>
         </div>
-    </header>
-<!--  ********    ********        About Section    ********    ********  -->
+    </header> <!-- ========== End Header section ========== -->
+
     <main>
-        <section id="about">
-            <div class="full-width">
-                <h2>A little bit about me.</h2>
-                <div class="half-width">
-                    <p>I am creative professional based out of Rochester, NY, with degrees in industrial and graphic design. After years working for a small business and helping to manage their website, I grew frustrated with the design restrictions I encountered as a result of not knowing how to code. Finally, I decided to take the leap and start learning!</p>
-                </div>
-                <div class="half-width">
-                    <p>That curiosity then opened a door that could never be shut. When I learned how to build my first website, I realized I found something that gave me the freedom & versatility I was looking for in my work. Now I've made a full switch to front-end development, where I can use my organization skills and eye for detail to write clean, elegant code.</p>
-                </div>
+        <!-- ========== Main Wrapper ========== -->
+
+        <section class="hero-area">
+            <!-- ========== hero section ========== -->
+            <div class="content-wrapper">
+                <!-- Insert background image in CSS-->
+                <h1>let's <span>&lt;build&gt;</span> something cool</h1>
             </div>
         </section>
-<!--  ********    ********        Work Section    ********    ********  -->
+        <!-- ========== end hero section ========== -->
+
         <section id="work">
-            <div class="full-width">
-                <div class="third-width">
-                    <img src="img/html-icon.png" alt="HTML Icon"/>
-                    <h3><a href="work/index.html">Hand-Coded HTML</a></h3>
-                    <p>My focus is writing clean, well-formatted, semantic HTML5 by hand to make sure that the content is easy to read, easy to collaborate, trouble-shoot and accessible.</p>
-                </div>
-                <div class="third-width">
-                    <img src="img/css-icon.png" alt="CSS Icon"/>
-                    <h3><a href="work/index.html">Well-Organized CSS</a></h3>
-                    <p>I pride myself on writing CSS that is easy to read and build on. I focus on keeping my CSS lean and fast to load, and I make it a habit to stay up to date on current best practices.</p>
-                </div>
-                <div class="third-width">
-                    <img src="img/pencil-icon.png" alt="Pencil Icon"/>
-                    <h3><a href="work/index.html">Ease Converting Designs into Code</a></h3>
-                    <p>You can trust me to take a designer's PSD and quickly & accurately convert it into a webpage that is pixel-perfect match.</p>
+            <!-- ========== work section ========== -->
+            <div class="content-wrapper">
+                <h2>&lt;my work&gt;</h2>
+                <div class="work-examples">
+                    <article>
+                        <!-- Unplugged Website -->
+                        <figure>
+                            <a href="https://meganwallace.github.io/206-unplugged/" target="_blank"><img src="img/unplugged-thumbnail.png" alt="unplugged-thumbnail" /></a>
+                        </figure>
+                        <div class="work-description">
+                            <h3>Unplugged</h3>
+                            <p><em>HTML5, CSS, Flexbox, responsive images/typography, media queries</em></p>
+                            <p>Using a Photoshop design comp, build a 3-page responsive website that adapts to mobile,
+                                tablet, and desktop screens.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- Responsive Rogue Pickings Website -->
+                        <figure>
+                            <a href="https://meganwallace.github.io/206-responsive-rogue-pickings/" target="_blank"><img src="img/rogue-pickings-thumbnail.png" alt="rogue-pickings-thumbnail" /></a>
+                        </figure>
+                        <div class="work-description">
+                            <h3>Responsive Rogue Pickings Website</h3>
+                            <p><em>HTML5, CSS, Flexbox, responsive images/typography, media queries</em></p>
+                            <p>Adapt a static website to become responsive using Flexbox. This project focused on
+                                adapting an existing one-page static desktop site to respond for tablets and mobile
+                                devices.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- Jubilee Austen Project -->
+                        <figure>
+                            <a href="https://meganwallace.github.io/jubilee-austen/" target="_blank"><img src="img/jubilee-thumbnail.png" alt="jubilee-austen-thumbnail" /></a>
+                        </figure>
+                        <div class="work-description">
+                            <h3>Jubilee Austen Project</h3>
+                            <p><em>HTML5 & CSS Website</em></p>
+                            <p>Create a one-page website using a design comp. This project focused on extracting images,
+                                fonts, and measurements, along with other essential information, from a Photoshop design
+                                file and translate it into a site using HTML and CSS.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- Recipe Collection -->
+                        <figure>
+                            <a href="https://meganwallace.github.io/recipe-cards/" target="_blank"><img src="img/recipe-thumbnail.png" alt="recipe-thumbnail" /></a>
+                        </figure>
+                        <div class="work-description">
+                            <h3>Recipe Collection</h3>
+                            <p><em>HTML5 & CSS Exercise</em></p>
+                            <p>Create three expertly styled recipe cards from a design comp and style guide using CSS.
+                            </p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
-<!--  ********    ********    WEBPAGE FOOTER    ********    ********  -->
-<!--  ********    ********        Contact    ********    ********  -->
-        <footer id="contact">
-            <div class="full-width">
-                <div class="half-width">
-                    <img src="img/contact-image.png" id="contact-img" alt="Contact Image"/>
-                </div>
-                <div class="half-width">
-                    <h2>Like what you see?</h2>
-                    <h3 id="email-header">Let's talk!</h3>
-                    <a href="mailto:meganwallacedesign@gmail.com"><img src="img/envelope.png" id="envelope" alt="Envelope"/></a>
-                    <a href="mailto:meganwallacedesign@gmail.com">meganwallacedesign@gmail.com</a>
-                    <h3 id="socialmedia-header">Or, find me on the interwebs</h3>
-                    <ul>
-                        <li><img src="img/tumblr.png" alt="Tumblr"/></li>
-                        <li><img src="img/instagram.png" alt="Instagram"></li>
-                        <li><a href="https://www.linkedin.com/in/meganwsearle/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"/></a></li>
-                        <li><a href="https://github.com/MeganWallace" target="_blank"><img src="img/github.png" alt="GitHub"/></a></li>
-                    </ul>
+        <!-- ========== end work section ========== -->
+
+        <section id="about">
+            <!-- ========== about section ========== -->
+            <div class="content-wrapper">
+                <h2>&lt;about me&gt;</h2>
+                <div class="about-content">
+                    <h3>I am passionate about clean, elegant code.</h3>
+                    <p>I am creative professional based out of Rochester, NY, with degrees in industrial and graphic
+                        design. Years working for a small business and helping to manage their website, left me
+                        frustrated with the design restrictions I encountered as a result of not knowing how to code. My
+                        journey into tech started as a way to expand my design skills, but when I built my first
+                        website, I realized I had found something that satisfied both the right and the left sides of my
+                        brain. A way to <em>finally</em> combine my creativity with my attention to detail and overly
+                        organized thinking!</p>
+
+                    <!--gave me the freedom & versatility I was looking for. Now I've 
+                    decided to fully dive into front-end development, where I can use my organization skills and eye for detail to 
+                    write clean, elegant code.</p> -->
+
+                    <p>I can’t wait to work with you! </p>
                 </div>
             </div>
-        </footer>
-    </main>
-    </body>
+        </section>
+        <!-- ========== end about section ========== -->
+
+    </main> <!-- ========== Main Wrapper Ends ========== -->
+
+    <!-- ====================== Footer section ====================== -->
+    <footer>
+        <div class="content-wrapper">
+            <div class="footer-content">
+                <h2>&lt;like what you see?&gt;</h2>
+                <div id="contact">
+                    <h3>Let's talk</h4>
+                    <address>
+                        <p>
+                            978-799-9790<br>
+                            <a href="mailto:meganwallacedesign@gmail.com">meganwallacedesign@gmail.com</a><br>
+                            Rochester, NY
+                        </p>
+                    </address>
+                </div> <!-- contact div ends -->
+                <div class="social">
+                    <h3>Follow Me</h4>
+                    <div class="social-icons">
+                        <p>
+                            <a href="https://github.com/MeganWallace" target="_blank"><i class="fab fa-github"></i></a>
+                        </p>
+                        <p>
+                            <a href="https://www.linkedin.com/in/meganwsearle/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- footer-content div ends -->
+        </div>
+        <!--footer content-wrapper ends -->
+        <div class="copyright">
+            <p>Copyright 2021 | Megan Wallace Design</p>
+        </div>
+    </footer>
+
+    <!-- ========================== default js links ========================== -->
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
 </html>
