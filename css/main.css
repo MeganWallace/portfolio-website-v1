@@ -86,24 +86,23 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* General Styles */
 
+/* ***** General Styles ***** */
 html {
   background-color: #1f202b;
   font-size: 16px;
 }
-
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   text-align: left;
-  color: #e2e3ed;
+  color: #ffffff;
 }
-
 ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
-
 a {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.82em; /*13px*/
@@ -112,38 +111,32 @@ a {
   text-decoration: none;
   margin:0;
 }
-
 h1 {
   font-family: 'Source Code Pro', monospace;
   font-size: 2.25em; /*36px*/
   line-height: 1.2em;;
   margin: 0;
 }
-
 h2 {
   font-family: 'Source Code Pro', monospace;
   font-size: 1.125em; /*18px*/
   color: #fa0075;
   margin: 0 0 15px 0;
 }
-
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.875em;  /*14px*/
   font-weight: 700;
   margin: 0;
 }
-
 p {
   font-size: 0.875em;  /*14px*/
   line-height: 1.285em;  /*18px, 1em=14px*/
   margin: 10px 0;
 }
-
 img {
   width: 100%;
 }
-
 figure {
   width: 100%;
   margin: 0;
@@ -151,17 +144,15 @@ figure {
   justify-content: center;
   flex: row wrap;
 }
-
 address {
   font-style: normal;
 }
-
 .content-wrapper{
   width: 85%;
   margin: 20px 0 0px 0;
 }
 
-/* -------------------- Base Header - Footer Styles -------------------- */
+/* ================== Base Header - Footer Styles ================== */
 header, 
 footer {
   display: flex;
@@ -170,11 +161,10 @@ footer {
   flex-flow: row wrap;
 }
 
-/* ----- Header Styles ----- */
+/*  ***** Header Styles ***** */
 header {
-  padding: 5px;
+  padding: 10px 5px;
 }
-
 header .content-wrapper {
   width: 100%;
   margin: 0;
@@ -183,16 +173,13 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row nowrap;
 }
-
 header #mwd {
   margin-left: 5px;
 }
-
 header #mwd a {
   line-height: .8em;
-  font-weight: 700;
+  font-weight: 500;
 }
-
 header nav {
   flex-basis: 40%;
   display: flex;
@@ -200,48 +187,49 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
 }
-
 header nav ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-
 header nav ul a {
   padding: 5px;
 }
-/* ----- Footer Styles ----- */
 
+/* ***** Footer Styles ***** */
 footer h2 {
   text-align: center;
 }
-
 #contact {
   margin-bottom: 15px;
 }
 #contact a {
   font-size: 1em;  /*14px*/
 }
-
 footer .social-icons {
   font-size: 2em;
   width: 25%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0;
 }
-
+footer .social-icons i {
+  padding: 0 25px 0 0;
+}
 footer .copyright {
+  width: 100%;
+  text-align: center;
   font-size: 0.82em; /*13px*/
   margin: 10px 0;
 }
 
 /* ================== Mobile Styles - Homepage ================== */
 
-/* ----- Hero Area ----- */
+/* ***** Hero Area ***** */
 .hero-area {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
   background-image: url('../img/hero-background.png');
   background-size: cover;
@@ -249,31 +237,32 @@ footer .copyright {
   min-height: 300px;
 }
 
-.hero-area h1 {
-  width: 78%;
+.hero-area .content-wrapper {
+  margin:0;
 }
-
+.hero-area h1 {
+  width: 70%;
+}
 .hero-area h1 span {
   color: #fa0075;
 }
-/* ----- Work ----- */
+
+/* ***** Work ***** */
 #work {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
-
 #work .work-description {
   margin: 15px 0 30px 0;
 }
-
 #work h2 {
 text-align: center;
 }
 
-/* ----- About ----- */
+/* ***** About ***** */
 #about {
-  color: #fff;
+  color: #1f202b;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -286,6 +275,12 @@ text-align: center;
 }
 #about h2 {
   text-align: center;
+}
+#about p {
+  margin:0;
+}
+#about p span {
+  font-weight: 700;
 }
 
 /* ==========================================================================
@@ -377,87 +372,231 @@ text-align: center;
 
 /* ========================== TABLET STYLES ==================================== */    
 @media only screen and (min-width: 768px) {
-  /* General Styles */
+  /* ***** General Styles ***** */
   a {
-    font-size: 1.5em; /*24px*/
+    font-size: 1.25em; /*20px*/
   }
-
   h1 {
     font-size: 3em; /*48px*/
   }
-
   h2 {
-    font-size: 2.25em; /*36px*/
+    font-size: 1.5em; /*24px*/
+    margin: 0;
   }
-
   h3 {
-    font-size: 1.5em;  /*24px*/
+    font-size: 1.125em;  /*18px*/
   }
-
   p {
-    font-size: 1.5em;  /*24px*/
-    line-height: 1.2em;
+    font-size: 0.875em;  /*14px*/
+    margin: 0;
+  }
+  .content-wrapper {
+    max-width: 668px;
+    margin-top: 30px;
+    margin-bottom: 55px;
   }
 
-
-  /* Header Styles */
+  /* ***** Header Styles ***** */
   header {
-    padding: 25px 0 15px 0;
+    padding: 15px 0;
   }
-
   header .content-wrapper {
-    width: 90%;
+    max-width: 718px;
+    flex: row wrap;
+  }
+  header #mwd {
+    width: 42%;
+    margin: 0;
+  }
+  header nav ul a {
+    padding: 0px;
   }
 
-  /* ---------------- Tablet - Homepage ---------------- */
-  /* ----- Hero Area ----- */
+  /* ***** Footer Styles ***** */
+  footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex: row wrap;
+  }
+  footer h3 {
+    margin: 60px 0 15px 0;
+    text-align: center;
+  }
+  footer #contact,
+  footer .social {
+    width: 40%;
+    margin: 0;
+  }
+  footer #contact p {
+    text-align: center;
+  }
+  footer .social-icons {
+    width: 100%;
+    padding-top: 10px;
+    justify-content: center;
+  }
+  footer .social-icons i {
+    padding: 0 25px;
+  }
+  footer .copyright {
+    font-size: 0.875em; /*14px*/
+    margin: 10px 0;
+  }
+
+  /* ================ Tablet - Homepage ================ */
+  /* ***** Hero Area ***** */
   .hero-area {
-    min-height: 500px; 
+    min-height: 400px; 
   }
 
+  /* ***** Work Area ***** */
+  .work-examples article {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+  }
+  .work-examples .row-reverse {
+    flex-direction: row-reverse 
+  }
+  .work-examples figure,
+  .work-examples .work-description {
+    width: 47%;
+  }
+  #work .work-description {
+    margin: 0;
+  }
+  #work .work-description h3 {
+    margin: 0 0 10px 0;
+  }
+  #work .work-description p {
+    margin: 0 0 15px 0;
+  }
+  #work .row-reverse {
+    text-align: right;
+  }
 
-
-
+  /* ***** About Area ***** */
+  #about {
+    min-height: 320px;
+  }
+  #about .about-content {
+    width: 70%;
+    margin-top: 35px;
+  }
 
 }
 
 
 /* ========================== DESKTOP STYLES ==================================== */    
 @media only screen and (min-width: 1200px) {
-  /* General Styles */
+  /* ***** General Styles ***** */
   a {
-    font-size: 1.875em; /*30px*/
+    font-size: 1.5em; /*24px*/
   }
-
   h1 {
     font-size: 4.5em; /*72px*/
   }
-
   h2 {
     font-size: 2.25em; /*36px*/
+    margin: 0;
   }
-
   h3 {
     font-size: 1.5em;  /*24px*/
   }
-
   p {
-    font-size: 1.5em;  /*24px*/
-    line-height: 1.2em;
+    font-size: 1.25em;  /*20px*/
+    margin: 0;
+  }
+  .content-wrapper {
+    max-width: 1100px;
+    margin-top: 45px;
+    margin-bottom: 85px;
   }
 
+  /* ***** Header Styles ***** */
+  header .content-wrapper {
+    max-width: 1140px;
+    flex-flow: row wrap;
+  }
+  header #mwd {
+    width: 42%;
+    margin: 0;
+  }
+  header nav {
+    flex-basis: 32%;
+  }
+  header nav ul a {
+    padding: 0px;
+  }
 
-
-
-  /* ---------------- Desktop - Homepage ---------------- */
-  /* ----- Hero Area ----- */
+  /* ***** Footer Styles ***** */
+  footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex: row wrap;
+  }
+  footer h3 {
+    margin: 90px 0 25px 0;
+    text-align: center;
+  }
+  footer #contact,
+  footer .social {
+    width: 40%;
+    margin: 0;
+  }
+  footer #contact p {
+    text-align: center;
+  }
+  footer .social-icons {
+    width: 100%;
+    padding-top: 10px;
+    justify-content: center;
+  }
+  footer .social-icons i {
+    padding: 0 25px;
+  }
+  footer .copyright {
+    font-size: 1em; /*16px*/
+    margin: 15px 0;
+  }
+  
+  /* ================ Desktop - Homepage ================ */
+  /* ***** Hero Area ***** */
   .hero-area {
-    min-height: 700px;
+    min-height: 725px;
   }
 
-
-
-
+  /* ***** Work Area ***** */
+  .work-examples article {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .work-examples .row-reverse {
+    flex-direction: row-reverse 
+  }
+  .work-examples figure,
+  .work-examples .work-description {
+    width: 46%;
+  }
+  #work .work-description {
+    margin: 0;
+  }
+  #work .work-description h3 {
+    margin: 0 0 10px 0;
+  }
+  #work .work-description p {
+    margin: 0 0 20px 0;
+  }
+  /* ***** About Area ***** */
+  #about .about-content {
+    width: 55%;
+    margin-top: 55px;
+  }
 
 }
 
