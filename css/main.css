@@ -402,7 +402,7 @@ text-align: center;
   }
   header .content-wrapper {
     max-width: 718px;
-    flex: row wrap;
+    flex-flow: row wrap;
   }
   header #mwd {
     width: 42%;
@@ -441,7 +441,6 @@ text-align: center;
   }
   footer .copyright {
     font-size: 0.875em; /*14px*/
-    margin: 10px 0;
   }
 
   /* ================ Tablet - Homepage ================ */
@@ -518,45 +517,14 @@ text-align: center;
   /* ***** Header Styles ***** */
   header .content-wrapper {
     max-width: 1140px;
-    flex-flow: row wrap;
-  }
-  header #mwd {
-    width: 42%;
-    margin: 0;
   }
   header nav {
     flex-basis: 32%;
   }
-  header nav ul a {
-    padding: 0px;
-  }
 
   /* ***** Footer Styles ***** */
-  footer .footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex: row wrap;
-  }
   footer h3 {
     margin: 90px 0 25px 0;
-    text-align: center;
-  }
-  footer #contact,
-  footer .social {
-    width: 40%;
-    margin: 0;
-  }
-  footer #contact p {
-    text-align: center;
-  }
-  footer .social-icons {
-    width: 100%;
-    padding-top: 10px;
-    justify-content: center;
-  }
-  footer .social-icons i {
-    padding: 0 25px;
   }
   footer .copyright {
     font-size: 1em; /*16px*/
@@ -572,26 +540,15 @@ text-align: center;
   /* ***** Work Area ***** */
   .work-examples article {
     margin-top: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .work-examples .row-reverse {
-    flex-direction: row-reverse 
   }
   .work-examples figure,
   .work-examples .work-description {
     width: 46%;
   }
-  #work .work-description {
-    margin: 0;
-  }
-  #work .work-description h3 {
-    margin: 0 0 10px 0;
-  }
   #work .work-description p {
     margin: 0 0 20px 0;
   }
+  
   /* ***** About Area ***** */
   #about .about-content {
     width: 55%;
